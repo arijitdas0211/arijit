@@ -19,7 +19,10 @@ export default function App() {
         <Route index path="/portfolio" element={<Portfolio />}></Route>
         <Route index path="/contact" element={<Contact />}></Route>
       </Routes>
+
+      
       
     </>
   );
 }
+
