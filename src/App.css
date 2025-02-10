@@ -1,26 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Selection styles */
 *::selection {
   color: #FFFFFF;
   background-color: #009688;
 }
 
+/* Body styles */
 body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", serif;
   color: #FFFFFF;
-  background-color: #2b4162;
-  background-image: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
+  background: linear-gradient(315deg, #2b4162 0%, #12100e 74%);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
+/* Logo styles */
 .logo {
   width: 60px;
 }
 
+/* Navbar styles */
 nav.navbar {
   margin: auto;
   width: 100%;
@@ -30,9 +34,10 @@ nav.navbar {
 }
 
 .navbar-toggler {
-  background-color: #FFFFFF;
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
+/* Navbar link styles */
 .nav-link {
   font-size: 15px;
   font-weight: 500;
@@ -42,7 +47,7 @@ nav.navbar {
   letter-spacing: 1px;
   margin: 10px;
   padding: 10px;
-  transition: 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
 }
 
 .nav-link:hover {
@@ -53,17 +58,36 @@ nav.navbar {
   color: crimson;
 }
 
+/* Row styles */
 .row {
   margin: 0;
 }
 
+/* Ad styles */
 .ad {
-  width: 100px;
-  border-radius: 10px;
+  width: 70px;
+  position: relative;
+  box-shadow: 0 0 7px 5px rgba(0,0,0,0.4);
+  border-radius: 50%;
   backdrop-filter: brightness(0.5);
   background-color: #009688;
+  transition: all 0.5s ease-in-out;
+  animation: pic_animate 2s infinite;
 }
 
+@keyframes pic_animate {
+  0% {
+    top: -5px;
+  }
+  50% {
+    top: 10px;
+  }
+  100% {
+    top: -5px;
+  }
+}
+
+/* Heading styles */
 .heading_h1 {
   font-size: 80px;
   font-weight: 200;
@@ -75,9 +99,19 @@ nav.navbar {
   letter-spacing: 1.5px;
 }
 
+/* Table header styles */
 .th_or {
   background-color: #009688;
   font-weight: 400;
   padding: 5px;
   border-radius: 10px;
 }
+
+/* Yellow span styles */
+.yellow_span {
+  font-weight: 300;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  color: coral;
+}
+

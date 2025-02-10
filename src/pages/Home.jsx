@@ -1,4 +1,4 @@
-// import ad from "../assets/ad.png";
+import ad from "../assets/ad.png";
 
 export default function Home() {
   return (
@@ -8,13 +8,14 @@ export default function Home() {
           <div className="col-md-6 col-sm-12 col-lg-6 pt-5">
             <div className="row">
               <div className="col-md-12 p-5">
-                {/* <img src={ad} alt="ARIJIT PICTURE" className="ad" /> */}
+                <img src={ad} alt="ARIJIT PICTURE" className="ad" />
               </div>
               <div className="col-md-12 ps-5">
                 <h1 className="heading_h2">Hello!</h1>
-                <h2 className="heading_h1">
-                  I&apos;m <span className="th_or pe">Arijit</span> Das
-                </h2>
+                <h2 className="heading_h1">I&apos;m Arijit Das</h2>
+                <h4 className="mt-4">
+                  <span className="yellow_span">Software Developer</span>
+                </h4>
               </div>
             </div>
           </div>
